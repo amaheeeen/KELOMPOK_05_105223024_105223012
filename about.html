@@ -2,37 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Kopi Santai</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="images/images.jpeg" alt="Logo Here">
+        <img class="logo" src="images/images.jpeg" alt="Logo Kopi Santai">
         <h1>KOPI SANTAI</h1>
         <q>Nikmati Setiap Tegukan</q>
-        <div class="grid-container-area">    
-            <nav class="nav-list"> 
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="reservation.html">Reservation</a>
-                <a href="about.html">About</a>
-            </nav>
-        </div>
+        <nav class="nav-list"> 
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main>
         <section id="story">
-            <div>
-                <figure>
-                    <img src="" alt="Our Story">
-                    <figcaption>contoh</figcaption>
-                </figure>
-                <h2>Tentang Kopi Santai</h2>
-                <p>Kopi Santai didirikan pada tahun 2020 dengan tujuan memberikan pengalaman ngopi terbaik bagi para pecinta kopi. Kami mengutamakan kualitas biji kopi dan suasana yang nyaman untuk bersantai.</p>
+            <h2>Tentang Kopi Santai</h2>
+            <figure class="story-image">
+                <img src="images/suasana-nyaman.jpg" alt="Suasana Kopi Santai">
+                <figcaption>Suasana nyaman di Kopi Santai</figcaption>
+            </figure>
+            
+            <div class="story-content">
+                <p>Kopi Santai didirikan pada tahun 2020 dengan tujuan memberikan pengalaman ngopi terbaik bagi para pecinta kopi. Kami percaya bahwa kopi bukan hanya minuman, tetapi juga cara untuk terhubung dan bersantai sejenak dari kesibukan.</p>
+                <p>Kami memulai perjalanan kami dari sebuah kedai kecil di sudut kota, dengan hasrat besar untuk menyajikan biji kopi berkualitas tinggi yang kami pilih langsung dari petani lokal terbaik di seluruh Indonesia.</p>
+                <p>Hingga hari ini, kami terus berinovasi dalam menyajikan minuman, makanan, dan suasana yang nyaman untuk bersantai, bekerja, atau sekadar berkumpul dengan teman dan keluarga.</p>
+                
                 <blockquote>
-                    "Kopi adalah seni, dan setiap cangkir adalah karya seni yang unik." - Riansky
+                    "Kopi adalah seni, dan setiap cangkir adalah karya seni yang unik."
                 </blockquote>
+            </div>
         </section>
 
         <section id="our-value">
@@ -40,67 +44,120 @@
             <ul>
                 <li>Kualitas Premium</li>
                 <li>Pelayanan Terbaik</li>
-                <li>Sustainability</li>
-                <li>community</li>
-                <li>Ramah & Keren </li>
+                <li>Sustainability (Keberlanjutan)</li>
+                <li>Community (Komunitas)</li>
+                <li>Ramah & Profesional</li>
             </ul>
         </section>
 
         <section id="gallery">
-            <h2>Galeri Kami</h2>
-            <div>
+            <h2>Galeri Kafe</h2>
+            <div class="grid-container-gallery">
                 <figure>
-                    <img src="" alt="Gallery Image 1">
-                    <figcaption>contoh</figcaption>
+                    <img src="images/caffe-latte.jpeg" alt="Gallery Image 1">
+                    <figcaption>Caffe Latte</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Gallery Image 1">
-                    <figcaption>contoh</figcaption>
+                    <img src="images/espresso.jpg" alt="Gallery Image 2">
+                    <figcaption>Espresso</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Gallery Image 1">
-                    <figcaption>contoh</figcaption>
+                    <img src="images/cappucino.jpeg" alt="Gallery Image 3">
+                    <figcaption>Cappuccino</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Gallery Image 1">
-                    <figcaption>contoh</figcaption>
+                    <img src="images/layanan-ramah.jpg" alt="Gallery Image 4">
+                    <figcaption>Layanan Kami</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Gallery Image 1">
-                    <figcaption>contoh</figcaption>
+                    <img src="images/kualitas.jpeg" alt="Gallery Image 5">
+                    <figcaption>Biji Kopi Pilihan</figcaption>
                 </figure>
                 <figure>
-                    <img src="" alt="Gallery Image 1">
-                    <figcaption>contoh</figcaption>
+                    <img src="images/suasana-nyaman.jpg" alt="Gallery Image 6">
+                    <figcaption>Suasana Kafe</figcaption>
                 </figure>
             </div>
         </section>
 
         <section id="location">
-            <h2>Lokasi Kami</h2>
-            <iframe src="" frameborder="0"></iframe>
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=farhan+surya+indah&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                    </iframe>
-                    <a href="https://www.alarm-clock.net/">online alarm clock</a>
-                    <br>
-                    <a href="https://www.alltopplaces.com"></a>
-                    <br>
-                    <style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style>
-                    <a href="https://www.mapembed.net">google map net</a>
-                    <style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 820px;}</style>
+            <h2>Lokasi & Jam Buka</h2>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.342994406256!2d106.8282008418931!3d-6.219495488426039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fd540de!2sJakarta!5e0!3m2!1sid!2sid!4v1678888888888!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            <div class="location-details">
+                <div class="address-info">
+                    <h3>Alamat</h3>
+                    <address>
+                        Jl. Kopi Santai No. 123<br>
+                        Kuningan, Jakarta Selatan<br>
+                        DKI Jakarta 12940
+                    </address>
+                </div>
+                <div class="hours-info">
+                    <h3>Jam Operasional</h3>
+                    <table>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Jam Buka</th>
+                        </tr>
+                        <tr>
+                            <td>Senin - Jumat</td>
+                            <td>08:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabtu - Minggu</td>
+                            <td>09:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Hari Libur Nasional</td>
+                            <td>Tutup</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <table>
-                <tr>
-                    <th>Jam Operasional</th>
-                    <td>Jl. Contoh No.123, Jakarta</td>
-                    <td>Jl. Contoh No.123, Jakarta</td>
-                    <td>Jl. Contoh No.123, Jakarta</td>
-            </table>
-            <address>Alalamt Lengkap</address>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Kontak Kami</h3>
+                <address>
+                    Jl. Kopi Santai No. 123<br>
+                    Jakarta, Indonesia<br>
+                    <br>
+                    <strong>Phone:</strong> (021) 123-4567<br>
+                    <strong>Email:</strong> info@kopisantai.com
+                </address>
+            </div>
+            <div class="footer-hours">
+                <h3>Jam Operasional</h3>
+                <p>Senin - Jumat: 08:00 - 22:00</p>
+                <p>Sabtu - Minggu: 09:00 - 23:00</p>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Kopi Santai. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

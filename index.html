@@ -5,77 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOPI SANTAI</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
         <img class="logo" src="images/images.jpeg" alt="Logo Kopi Santai">
         <h1>KOPI SANTAI</h1>
         <q>Nikmati Setiap Tegukan</q>
-        <div class="grid-container-areas">
-            <nav class="nav-list">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="reservation.html">Reservation</a>
-                <a href="about.html">About</a>
-            </nav>
-        </div>
+        <nav class="nav-list">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="reservation.html">Reservation</a>
+        </nav>
     </header>
         
     <main>
-        <section>
-            <div>
+        <section class="hero-section">
+            <div class="hero-content">
                 <h2>Selamat Datang di Kopi Santai</h2>
-                <q>Tempat Terbaik untuk bersantai dengan secangkir kopi</q>
+                <q>Tempat Terbaik untuk Bersantai dengan Secangkir Kopi</q>
                 <br>
                 <div class="btn-home">
-                    <input type="submit" value="Lihat Menu">
-                    <input type="submit" value="Reservasi Sekarang">
+                    <a href="menu.html" class="btn-cta">Lihat Menu</a>
+                    <a href="reservation.html" class="btn-cta">Reservasi Sekarang</a>
                 </div>
             </div>
         </section>
         
-        <section>
+        <section class="featured-menu">
             <h2>Menu Favorit Kami</h2>
             <div class="grid-container-menu">
-                <article class="menus menu1">
+                <article class="menus">
                     <img src="images/caffe-latte.jpeg" alt="caffe-latte">
                     <h3>Cafe Latte</h3>
-                    <h2>Rp.35.000</h2>
-                    <p>Deskripsi Singkat</p>
+                    <p class="price">Rp.35.000</p>
+                    <p>Espresso dengan susu steamed dan sedikit busa.</p>
                 </article>
-                <article class="menus menu2">
+                <article class="menus">
                     <img src="images/espresso.jpg" alt="espresso">
                     <h3>Espresso</h3>
-                    <h2>Rp.25.000</h2>
-                    <p>Deskripsi Singkat</p>
+                    <p class="price">Rp.25.000</p>
+                    <p>Ekstraksi kopi murni dengan crema tebal.</p>
                 </article>
-                <article class="menus menu3">
+                <article class="menus">
                     <img src="images/cappucino.jpeg" alt="cappucino">
                     <h3>Cappuccino</h3>
-                    <h2>Rp.35.000</h2>
-                    <p>Deskripsi Singkat</p>
+                    <p class="price">Rp.35.000</p>
+                    <p>Perpaduan seimbang espresso, susu, dan busa tebal.</p>
                 </article>
-                <article class="menus menu4">
+                <article class="menus">
                     <img src="images/americano.jpeg" alt="americano">
                     <h3>Americano</h3>
-                    <h2>Rp.1.800.000</h2>
-                    <p>Deskripsi Singkat</p>
+                    <p class="price">Rp.30.000</p>
+                    <p>Espresso yang ditambahkan air panas.</p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Why Choose Us?</h2>
+        <section class="why-choose-us">
+            <h2>Mengapa Memilih Kami?</h2>
             <div class="grid-container-choose">
-                <article class="chooses choose1">
+                <article class="chooses">
                         <img src="images/kualitas.jpeg" alt="Kopi Berkualitas Tinggi">
                         <h3>Kopi Berkualitas Tinggi</h3>
                 </article>
-                <article class="chooses choose2">
+                <article class="chooses">
                         <img src="images/suasana-nyaman.jpg" alt="Suasana Nyaman">
                         <h3>Suasana Nyaman</h3>
                 </article>
-                <article class="chooses choose3">
+                <article class="chooses">
                         <img src="images/layanan-ramah.jpg" alt="Layanan Ramah">
                         <h3>Layanan Ramah</h3>
                 </article>
@@ -84,20 +83,34 @@
     </main>
     
     <footer>
-        <address>Alamat</address>
-        <table>
-            <tr>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Jam Operasional</th>
-                <th>Social Media</th>
-            </tr>
-            <tr>
-                <td>Email:
-        </table>
-        <p>&copy; 2024 Kopi Santai. All rights reserved.</p>
-
-
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Kontak Kami</h3>
+                <address>
+                    Jl. Kopi Santai No. 123<br>
+                    Jakarta, Indonesia<br>
+                    <br>
+                    <strong>Phone:</strong> (021) 123-4567<br>
+                    <strong>Email:</strong> info@kopisantai.com
+                </address>
+            </div>
+            <div class="footer-hours">
+                <h3>Jam Operasional</h3>
+                <p>Senin - Jumat: 08:00 - 22:00</p>
+                <p>Sabtu - Minggu: 09:00 - 23:00</p>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Kopi Santai. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

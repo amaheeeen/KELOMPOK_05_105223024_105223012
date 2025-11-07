@@ -3,92 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservasi - Kopi Santai</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
         <img class="logo" src="images/images.jpeg" alt="Logo Kopi Santai">
         <h1>KOPI SANTAI</h1>
         <q>Nikmati Setiap Tegukan</q>
-        <div class="grid-container-areas">
-            <nav class="nav-list">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="reservation.html">Reservation</a>
-                <a href="about.html">About</a>
-            </nav>
-        </div>
+        <nav class="nav-list">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
 
     <main>
-        <section id="reservation-info">
-            <h2>Reservasi Meja</h2>
-            <p>sistem reservasi</p>
-            <div class="list-syarat">
-                <li>
-                    <ul>syarat pendaftaran</ul>
-                    <ul>syarat pendaftaran</ul>
-                    <ul>syarat pendaftaran</ul>
-                </li>
-            </div>
+        <div class="reservation-container">
+            <section id="reservation-info">
+                <h2>Reservasi Meja</h2>
+                <p>Silakan isi formulir di bawah ini untuk memesan meja Anda. Kami akan mengkonfirmasi reservasi Anda melalui email atau telepon.</p>
+                <div class="list-syarat">
+                    <h3>Syarat & Ketentuan Reservasi:</h3>
+                    <ul>
+                        <li>Reservasi disarankan minimal 1 hari sebelumnya.</li>
+                        <li>Meja akan ditahan selama 15 menit dari waktu reservasi.</li>
+                        <li>Untuk grup lebih dari 10 orang, silakan hubungi kami langsung.</li>
+                    </ul>
+                </div>
 
-            <h2>Personal Information</h2>
-            <form action="" method="post">
-                <label for="name">Nama Lengkap:</label>
-                <input type="text" id="name" name="name" required>
+                <aside class="contact-alternative">
+                    <h3>Reservasi via Telepon</h3>
+                    <p>Anda juga dapat melakukan reservasi dengan menghubungi kami di:</p>
+                    <p><strong>Phone: (021) 123-4567</strong></p>
+                    <p><strong>WhatsApp: 0812-3456-7890</strong></p>
+                </aside>
+            </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <section id="reservation-form">
+                <h2>Formulir Reservasi Online</h2>
+                <form action="#" method="post">
+                    
+                    <fieldset>
+                        <legend>Informasi Personal</legend>
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap:</label>
+                            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="0812xxxxxxxx" required>
+                        </div>
+                    </fieldset>
 
-                <label for="phone">Nomor Telepon:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </form>
-
-            <h2>Reservation Details</h2>
-            <form action="" method="post">
-                <label for="date">Tanggal Reservasi:</label>
-                <input type="date" id="date" name="date" required>
-
-                <label for="time">Waktu Reservasi:</label>
-                <input type="time" id="time" name="time" required>
-
-                <label for="guest">Jumlah Tamu</label>
-                    <select name="guest" id="guest">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3" selected>3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                <label for="table-type">Tipe Meja</label>
-                    <select name="table-type-selection" id="table-type-selection">
-                        <option value="">Regular</option>
-                        <option value="">Window Seat</option>
-                        <option value="">Private Room</option>
-                    </select>
-                
-                <label for="note">Catatan Khusus</label>
-                <input type="textarea" id="note" name="note"> 
-                
-                <label for="">Syarat & Ketentuan
-                    <input type="checkbox" name="accept" required>anda menyetujui ketentuan dan syarat yang diberikan di cafe kami.
-                </label>
-                
-                <input type="submit" value="Submit Reservation">
-
-                <!-- CHECK SOAL BAGIAN D3 & D4 -->
-
-        </section>
+                    <fieldset>
+                        <legend>Detail Reservasi</legend>
+                        <div class="form-group">
+                            <label for="date">Tanggal Reservasi:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Waktu Reservasi:</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest">Jumlah Tamu:</label>
+                            <select name="guest" id="guest">
+                                <option value="1">1 orang</option>
+                                <option value="2">2 orang</option>
+                                <option value="3" selected>3 orang</option>
+                                <option value="4">4 orang</option>
+                                <option value="5">5 orang</option>
+                                <option value="6">6 orang</option>
+                                <option value="7">7 orang</option>
+                                <option value="8">8 orang</option>
+                                <option value="9">9 orang</option>
+                                <option value="10">10 orang</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="table-type">Tipe Meja:</label>
+                            <select name="table-type-selection" id="table-type-selection">
+                                <option value="regular">Regular</option>
+                                <option value="window">Window Seat</option>
+                                <option value="private">Private Room</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Catatan Khusus (Opsional):</label>
+                            <textarea id="note" name="note" rows="4" placeholder="Contoh: Butuh kursi bayi, alergi, dll."></textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Persetujuan</legend>
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="accept" name="accept" required>
+                            <label for="accept">Saya menyetujui ketentuan dan syarat yang diberikan di kafe kami.</label>
+                        </div>
+                    </fieldset>
+                    
+                    <input type="submit" value="Kirim Reservasi" class="btn-cta">
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Kontak Kami</h3>
+                <address>
+                    Jl. Kopi Santai No. 123<br>
+                    Jakarta, Indonesia<br>
+                    <br>
+                    <strong>Phone:</strong> (021) 123-4567<br>
+                    <strong>Email:</strong> info@kopisantai.com
+                </address>
+            </div>
+            <div class="footer-hours">
+                <h3>Jam Operasional</h3>
+                <p>Senin - Jumat: 08:00 - 22:00</p>
+                <p>Sabtu - Minggu: 09:00 - 23:00</p>
+            </div>
+            <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Kopi Santai. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
