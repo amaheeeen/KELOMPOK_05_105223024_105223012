@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/images.jpeg" alt="Logo Kopi Santai">
+        <h1>KOPI SANTAI</h1>
+        <q>Nikmati Setiap Tegukan</q>
+        <div class="grid-container-areas">
+            <nav class="nav-list">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="reservation-info">
+            <h2>Reservasi Meja</h2>
+            <p>sistem reservasi</p>
+            <div class="list-syarat">
+                <li>
+                    <ul>syarat pendaftaran</ul>
+                    <ul>syarat pendaftaran</ul>
+                    <ul>syarat pendaftaran</ul>
+                </li>
+            </div>
+
+            <h2>Personal Information</h2>
+            <form action="" method="post">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </form>
+
+            <h2>Reservation Details</h2>
+            <form action="" method="post">
+                <label for="date">Tanggal Reservasi:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Waktu Reservasi:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guest">Jumlah Tamu</label>
+                    <select name="guest" id="guest">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                <label for="table-type">Tipe Meja</label>
+                    <select name="table-type-selection" id="table-type-selection">
+                        <option value="">Regular</option>
+                        <option value="">Window Seat</option>
+                        <option value="">Private Room</option>
+                    </select>
+                
+                <label for="note">Catatan Khusus</label>
+                <input type="textarea" id="note" name="note"> 
+                
+                <label for="">Syarat & Ketentuan
+                    <input type="checkbox" name="accept" required>anda menyetujui ketentuan dan syarat yang diberikan di cafe kami.
+                </label>
+                
+                <input type="submit" value="Submit Reservation">
+
+                <!-- CHECK SOAL BAGIAN D3 & D4 -->
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
